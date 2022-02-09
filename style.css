@@ -1,33 +1,56 @@
-@import url('https://fonts.googleapis.com/css2?family=Monoton&family=Satisfy&family=Syncopate:wght@700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Gideon+Roman&family=Monoton&family=Satisfy&family=Syncopate:wght@700&display=swap');
+
 /* BEGIN NAVBAR */
+
 li a:hover {
     background-color: darkcyan;
-  } 
-.navbar {
-  background-color: #333;
 }
-.navbar li a {
-  display: block;
-  color: aliceblue;
-  font-family: Satisfy;
-  font-size: 20px;
-}
-.navbar .navbar-brand {
-  color: aliceblue;
-  font-family: Syncopate;
 
+.navbar {
+    background-color: #333;
 }
+
+.navbar li a {
+    display: block;
+    color: aliceblue;
+    font-family: Satisfy;
+    font-size: 20px;
+}
+
+.nav-item.dropdown li a {
+    color: aliceblue;
+}
+
+.nav-item.dropdown li a:hover {
+    background-color: darkcyan;
+}
+
+.navbar .navbar-brand {
+    color: aliceblue;
+    font-family: Syncopate;
+}
+
 #search {
-  color: aliceblue;
+    color: aliceblue;
 }
+
+
 /* END NAVBAR */
+
+
 /* Main */
+
 main {
     background-color: #333;
     color: aliceblue;
 }
+
+
 /* END MAIN */
+
+
 /* HOME */
+
 #home {
     background-image: url(images/6405318ac146473a95bfbdcec2b32943.gif);
     background-repeat: no-repeat;
@@ -37,18 +60,282 @@ main {
     color: white;
     margin-top: 52px;
     display: flex;
-    justify-content: center; /* align horizontal */
-    align-items: center; /* align vertical */
+    justify-content: center;
+    /* align horizontal */
+    align-items: center;
+    /* align vertical */
     font-family: Monoton;
     text-align: center;
 }
+
+#home span {
+    color: aqua;
+}
+
+
 /* END HOME */
-/* ABOUT ME */
+
+
+/* ABOUT ME BEGIN*/
+
 #about-me-heading {
     text-align: center;
     padding: 60px;
     font-family: Monoton;
 }
-#heading span {
+
+#about-me-heading span {
     color: aqua;
+}
+
+#about-me-description #information {
+    font-size: 18px;
+    font-family: Gideon Roman;
+    text-shadow: 2px 2px rgb(109, 108, 108);
+}
+
+#about-me-description #information h3 {
+    text-decoration: overline underline;
+    text-decoration-color: aquamarine;
+}
+
+#about-me-description #information figure {
+    color: lightcoral;
+}
+
+#about-me-description #information blockquote {
+    padding-left: 40px;
+    padding-top: 5px;
+}
+
+#about-me-description #information figcaption {
+    padding-left: 85%;
+}
+
+
+/* ABOUT ME - SKILLS BEGIN */
+
+#about-me-skills-info h4 {
+    text-align: center;
+    font-family: Gideon Roman;
+}
+
+#about-me-skills-heading {
+    text-align: center;
+    padding: 60px;
+    font-family: Gideon Roman;
+    text-decoration: overline underline;
+    text-decoration-color: aquamarine;
+}
+
+
+/* ABOUT ME - SKILLS - PROGRESS BEGIN */
+
+.progress {
+    width: 150px;
+    height: 150px !important;
+    float: left;
+    line-height: 150px;
+    background: none;
+    margin: 20px;
+    box-shadow: none;
+    position: relative
+}
+
+.progress:after {
+    content: "";
+    width: 100%;
+    height: 100%;
+    border-radius: 50%;
+    border: 12px solid #fff;
+    position: absolute;
+    top: 0;
+    left: 0
+}
+
+.progress>span {
+    width: 50%;
+    height: 100%;
+    overflow: hidden;
+    position: absolute;
+    top: 0;
+    z-index: 1
+}
+
+.progress .progress-left {
+    left: 0
+}
+
+.progress .progress-bar {
+    width: 100%;
+    height: 100%;
+    background: none;
+    border-width: 12px;
+    border-style: solid;
+    position: absolute;
+    top: 0
+}
+
+.progress .progress-left .progress-bar {
+    left: 100%;
+    border-top-right-radius: 80px;
+    border-bottom-right-radius: 80px;
+    border-left: 0;
+    -webkit-transform-origin: center left;
+    transform-origin: center left
+}
+
+.progress .progress-right {
+    right: 0
+}
+
+.progress .progress-right .progress-bar {
+    left: -100%;
+    border-top-left-radius: 80px;
+    border-bottom-left-radius: 80px;
+    border-right: 0;
+    -webkit-transform-origin: center right;
+    transform-origin: center right;
+}
+
+.progress .progress-value {
+    width: 90%;
+    height: 90%;
+    border-radius: 50%;
+    background: #000;
+    font-size: 24px;
+    color: #fff;
+    line-height: 135px;
+    text-align: center;
+    position: absolute;
+    top: 5%;
+    left: 5%
+}
+
+.progress.first .progress-bar {
+    border-color: #00eeff
+}
+
+.progress.first .progress-right .progress-bar {
+    animation: loading-1 1.8s linear forwards
+}
+
+
+/* THIS IS FOR DEGREES THAT LARGER THAN 180 */
+
+
+/* .progress.blue .progress-left .progress-bar {
+    animation: loading-2 1.8s linear forwards 1.8s
+} */
+
+.progress.second .progress-bar {
+    border-color: #00eeff
+}
+
+.progress.second .progress-right .progress-bar {
+    animation: loading-2 1.8s linear forwards
+}
+
+.progress.third .progress-bar {
+    border-color: #00eeff
+}
+
+.progress.progress.third .progress-right .progress-bar {
+    animation: loading-3 1.8s linear forwards
+}
+
+.progress.fourth .progress-bar {
+    border-color: #00eeff
+}
+
+.progress.fourth .progress-right .progress-bar {
+    animation: loading-4 1.8s linear forwards
+}
+
+@keyframes loading-1 {
+    0% {
+        -webkit-transform: rotate(0deg);
+        transform: rotate(0deg)
+    }
+    100% {
+        -webkit-transform: rotate(36deg);
+        transform: rotate(36deg)
+    }
+}
+
+
+/* THIS IS FOR DEGREES THAT LARGER THAN 180 */
+
+
+/* @keyframes loading-2 {
+    0% {
+        -webkit-transform: rotate(0deg);
+        transform: rotate(0deg)
+    }
+    100% {
+        -webkit-transform: rotate(144deg);
+        transform: rotate(144deg)
+    }
+} */
+
+@keyframes loading-2 {
+    0% {
+        -webkit-transform: rotate(0deg);
+        transform: rotate(0deg)
+    }
+    100% {
+        -webkit-transform: rotate(90deg);
+        transform: rotate(90deg)
+    }
+}
+
+@keyframes loading-3 {
+    0% {
+        -webkit-transform: rotate(0deg);
+        transform: rotate(0deg)
+    }
+    100% {
+        -webkit-transform: rotate(108deg);
+        transform: rotate(108deg)
+    }
+}
+
+@keyframes loading-4 {
+    0% {
+        -webkit-transform: rotate(0deg);
+        transform: rotate(0deg)
+    }
+    100% {
+        -webkit-transform: rotate(126deg);
+        transform: rotate(126deg)
+    }
+}
+
+
+/* ABOUT ME- SKILLS - PROGRESS END */
+
+
+/* ABOUT ME - SKILLS END */
+
+
+/* ABOUT ME END */
+
+
+/* MY HOBBIES BEGIN */
+
+#bg {
+    background-image: linear-gradient(rgba(0, 0, 0, 0.527), rgba(0, 0, 0, 0.5)), url(images/wp5194199.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+}
+
+.my-hobbies #my-hobbies-heading {
+    text-align: center;
+    padding: 60px;
+    font-family: Monoton;
+}
+
+.my-hobbies #my-hobbies-heading span {
+    color: aqua
 }
