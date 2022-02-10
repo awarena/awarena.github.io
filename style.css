@@ -40,7 +40,7 @@ li a:hover {
 
 /* Main */
 
-main {
+body {
     background-color: #333;
     color: aliceblue;
 }
@@ -216,9 +216,10 @@ main {
     border-color: #00eeff
 }
 
-.progress.first .progress-right .progress-bar {
+
+/* .progress.first .progress-right .progress-bar {
     animation: loading-1 1.8s linear forwards
-}
+} */
 
 
 /* THIS IS FOR DEGREES THAT LARGER THAN 180 */
@@ -232,25 +233,28 @@ main {
     border-color: #00eeff
 }
 
-.progress.second .progress-right .progress-bar {
+
+/* .progress.second .progress-right .progress-bar {
     animation: loading-2 1.8s linear forwards
-}
+} */
 
 .progress.third .progress-bar {
     border-color: #00eeff
 }
 
-.progress.progress.third .progress-right .progress-bar {
+
+/* .progress.progress.third .progress-right .progress-bar {
     animation: loading-3 1.8s linear forwards
-}
+} */
 
 .progress.fourth .progress-bar {
     border-color: #00eeff
 }
 
-.progress.fourth .progress-right .progress-bar {
+
+/* .progress.fourth .progress-right .progress-bar {
     animation: loading-4 1.8s linear forwards
-}
+} */
 
 @keyframes loading-1 {
     0% {
@@ -260,6 +264,21 @@ main {
     100% {
         -webkit-transform: rotate(36deg);
         transform: rotate(36deg)
+    }
+}
+
+@media (prefers-reduced-motion: no-preference) {
+    .animation-1 {
+        animation: loading-1 1.8s linear forwards;
+    }
+    .animation-2 {
+        animation: loading-2 1.8s linear forwards;
+    }
+    .animation-3 {
+        animation: loading-3 1.8s linear forwards;
+    }
+    .animation-4 {
+        animation: loading-4 1.8s linear forwards;
     }
 }
 
